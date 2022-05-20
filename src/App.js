@@ -32,12 +32,12 @@ const App = () => {
         null,
         [
             React.createElement("h2", {}, "Alterna Student List"),            
-            // React.createElement(Student, { name: 'Adhonys', gender: 'm', score: 76 }),
-            // React.createElement(Student, { name: 'Kandora', gender: 'f', score: 78 }),
-            // React.createElement(Student, { name: 'George', gender: 'm', score: 80 }),
-            // React.createElement(Student, { name: 'Naxiell', gender: 'f', score: 82 }),
-            // React.createElement(Student, { name: 'Daniel', gender: 'm', score: 84 }),
-            React.createElement("div", {}, studentList)
+            React.createElement(Student, { name: 'Adhonys', gender: 'm', score: 76 }),
+            React.createElement(Student, { name: 'Kandora', gender: 'f', score: 78 }),
+            React.createElement(Student, { name: 'George', gender: 'm', score: 80 }),
+            React.createElement(Student, { name: 'Naxiell', gender: 'f', score: 82 }),
+            React.createElement(Student, { name: 'Daniel', gender: 'm', score: 84 }),
+            //React.createElement("div", {}, studentList)
             // students.forEach(student => {
             //     React.createElement(Student, student);
             // }),
