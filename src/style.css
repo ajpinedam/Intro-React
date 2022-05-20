@@ -1,8 +1,32 @@
 h3 {
-    color: red;
+    color: violet;
+}
+
+body {
+    background-color: #011627;
 }
 
 .student-card{
     border: 1px solid darkgray;
     padding: 5px;
+    border-radius: 15px;
+    margin: 15px 5px;
+    width: 350px;
+}
+
+.student-card h4 {
+    color: antiquewhite;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: nowrap;
+}
+
+.student-header {
+    color: whitesmoke    
+}
+
+.photo-card{
+    width: 100px;
+    height: 100px;
+    display: inline;
 }

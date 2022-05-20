@@ -1,3 +1,7 @@
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Student from './Student'
+
 let students = [
     { name: 'Adhonys', gender: 'm', score: 76 },
     { name: 'Kandora', gender: 'f', score: 78 },
@@ -13,36 +17,18 @@ let students = [
     { name: 'Wilber', gender: 'm', score: 98 },
     { name: 'Milton', gender: 'm', score: 100 }];
 
-const Student = (props) => {
-    return React.createElement("div", {className:"student-card"}, [
-        React.createElement("h3", {}, props.name),
-        React.createElement("h4", {}, props.gender),
-        React.createElement("h4", {}, props.score)
-    ]);
-}
-
-let studentList=[];
-students.forEach((student, index) => {
-    studentList.push(React.createElement(Student, student));
-});
+const milton = students[12];
 
 const App = () => {
-    return React.createElement (
-        "div",
-        null,
-        [
-            React.createElement("h2", {}, "Alterna Student List"),            
-            React.createElement(Student, { name: 'Adhonys', gender: 'm', score: 76 }),
-            React.createElement(Student, { name: 'Kandora', gender: 'f', score: 78 }),
-            React.createElement(Student, { name: 'George', gender: 'm', score: 80 }),
-            React.createElement(Student, { name: 'Naxiell', gender: 'f', score: 82 }),
-            React.createElement(Student, { name: 'Daniel', gender: 'm', score: 84 }),
-            //React.createElement("div", {}, studentList)
-            // students.forEach(student => {
-            //     React.createElement(Student, student);
-            // }),
-        ]
-        );
+    return <div>
+        <h2 className='student-header'>Alterna Student List</h2>
+        <Student name='Adhonys' gender='m' score='76' photo='https://github.com/madleak.png' />
+        <Student name='Kandora' gender='f' score='78' />
+        <Student name='George' gender='m' score='80' />
+        <Student name='Naxiell' gender='f' score='82' />
+        <Student name='Daniel' gender='m' score='84' />
+        <Student name={milton.name} gender={milton.gender} score={milton.score} />
+    </div>
 };
 
-ReactDOM.render(React.createElement(App), document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
