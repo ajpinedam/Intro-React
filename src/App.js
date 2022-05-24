@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import Student from './Student'
 import Example from './Example'
+import Pokemom from './Pokemon';
 
 let students = [
     { name: 'Adhonys', gender: 'm', score: 76 },
@@ -20,7 +21,7 @@ let students = [
 
 const milton = students[12];
 
-const App = () => {
+const App = () => {    
     return <div>
         <h2 className='student-header'>Alterna Student List</h2>
         <Student name='Adhonys' gender='m' score='76' photo='https://github.com/madleak.png' />
@@ -30,6 +31,9 @@ const App = () => {
 
         {/* useState Example */}
         <Example />
+
+        {/* useEffect Example */}
+        <Pokemom />
     </div>
 };
 

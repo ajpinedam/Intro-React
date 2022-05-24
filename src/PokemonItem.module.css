@@ -1,0 +1,13 @@
+.pokemon_name {
+    font-family: 'Segoe UI';
+    color: #c5c9d1;
+}
+
+.pokemon_name span {
+    font-weight:700;
+}
+
+.pokemon_url {
+    font-family: 'Segoe UI';
+    color: #fff;
+}
