@@ -8,25 +8,28 @@ body {
 
 .student-card{
     border: 1px solid darkgray;
-    padding: 5px;
+    padding: 8px;
     border-radius: 15px;
     margin: 15px 5px;
     width: 350px;
+    display: flex;
+    justify-content: flex-start;    
 }
 
 .student-card h4 {
     color: antiquewhite;
-    display: flex;
-    justify-content: flex-start;
-    flex-flow: nowrap;
 }
 
 .student-header {
     color: whitesmoke    
 }
 
-.photo-card{
-    width: 100px;
-    height: 100px;
-    display: inline;
+.photo-card {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.student-info {
+    flex: 2;
 }

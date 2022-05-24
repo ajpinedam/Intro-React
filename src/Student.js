@@ -1,4 +1,6 @@
 const Student = (props) => {
+    console.log('Student Component');
+
     return <div className='student-card'>
         <img src={props.photo} className="photo-card" />
         <div className="student-info">

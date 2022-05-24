@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Student from './Student'
+import Example from './Example'
 
 let students = [
     { name: 'Adhonys', gender: 'm', score: 76 },
@@ -26,8 +27,9 @@ const App = () => {
         <Student name='Kandora' gender='f' score='78' />
         <Student name='George' gender='m' score='80' />
         <Student name='Naxiell' gender='f' score='82' />
-        <Student name='Daniel' gender='m' score='84' />
-        <Student name={milton.name} gender={milton.gender} score={milton.score} />
+
+        {/* useState Example */}
+        <Example />
     </div>
 };
 
